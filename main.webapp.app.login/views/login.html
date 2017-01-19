@@ -1,0 +1,97 @@
+<div class="container">
+    	<div class="row">
+<!--     	<div class = "col-md-3"> -->
+<!--     		<table> -->
+<!--     		<thead> -->
+<!--     			<th><tr><h3><p class = "text-danger">Username Rules</p></h3></tr></th> -->
+<!--     		</thead> -->
+<!--     <tr><p class = 'text-white'>Only contains alphanumeric characters, underscore and dot</p></tr> -->
+<!--    	<tr> <p class = 'text-white'>Underscore and dot can't be at the end or start of a username</p></tr> -->
+<!--   	<tr> <p class = 'text-white'>(e.g _username / username_ / .username / username.)</p></tr> -->
+<!--    <tr> <p class = 'text-white'>Underscore and dot can't be next to each other (e.g user_.name)</p></tr> -->
+<!--    <tr><p class = 'text-white'> Underscore or dot can't be used multiple times in a row (e.g user__name / user..name)</p></tr> -->
+<!--    <tr> <p class = 'text-white'>Number of characters must be between 8 to 20</p></tr> -->
+<!-- 	</table> -->
+<!--     	</div> -->
+			<div class="col-md-6 col-md-offset-3">
+				<div class="panel panel-login">
+					<div class="panel-heading">
+						<span ng-click = "vm.exitBox()" class = "form-glyphicon glyphicon glyphicon-remove"></span>
+						<div class="row">
+							<div class="col-xs-5">
+								<a href="#" class="active" id="login-form-link">Login</a>
+							</div>
+							<div class="col-xs-6">
+								<a href="#" id="register-form-link">Register</a>
+							</div>
+						</div>
+						<hr>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+							<div class="col-lg-12">
+								<form id="login-form"  method="post" role="form" style="display: block;" novalidate>
+									<div class="form-group">
+										<input type="text" ng-model = "vm.username"  name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="" required>
+										<p ng-if = "vm.userDNE" class = "text-danger mt5">Username doesn't match</p>		
+									</div>
+									<div class="form-group">
+										<input type="password" ng-model = "vm.password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password" required>
+										<p ng-if = "vm.passDNE" class = "text-danger mt5">Password doesn't match</p>		
+									</div>
+									<div class="form-group text-center">
+										<input type="checkbox" ng-model = "vm.remember" tabindex="3" class="" name="remember" id="remember">
+										<label for="remember"> Remember Me</label>
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<input type="submit" ng-click = "vm.oldUser()" name="login-submit" id="login-submit" tabindex="4" class="form-control btn btn-login" value="Log In">
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-lg-12">
+												<div class="text-center">
+													<a ui-sref = "passRecovery" tabindex="5" class="forgot-password">Forgot Password?</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</form>
+								<form id="register-form"  method="post" role="form" style="display: none;" novalidate>
+									<div class="form-group">
+										<input type="text" name="username" ng-model = "vm.username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+										<p class = "text-danger mt5" ng-if = "vm.inValidUser">Invalid Username</p>
+										<p class = "text-danger mt5" ng-if = "vm.userExists">User already exists</p>
+									</div>
+									<div class="form-group">
+										<input type="email" ng-model = "vm.email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+										<p class = "text-danger mt5" ng-if = "vm.inValidEmail">Invalid Email</p>
+										<p class = "text-danger mt5" ng-if = "vm.emailExists">Email already exists</p>
+									</div>
+									<div class="form-group">
+										<input type="password" ng-model = "vm.password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+									</div>
+									<div class="form-group">
+										<input type="password" ng-model = "vm.confirmationPass" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+										<p class = "text-danger mt5" ng-if = "vm.passMisMatch">Password's don't match</p>															
+									</div>
+									<div class="form-group">
+										<div class="row">
+											<div class="col-sm-6 col-sm-offset-3">
+												<input type="submit" name="register-submit" ng-click = "vm.addUser()" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Register Now">
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	

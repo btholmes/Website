@@ -1,0 +1,31 @@
+<h1 class = "title text-black text-center">Projects</h1>
+<br>
+<br>
+
+<div class = "container mb2">
+	<div ng-if = "show" class = "fade1 text-blue col-md-4" ng-repeat = "item in vm.items track by $index">
+		<div class = "text-center mt15">
+			<!--<h4 class = "ml5 textTitlePortfolio">{{item.name}}</h4>-->
+			<!--<a ui-sref={{item.href}}><img class = "circlePic" src = {{item.img}}></a>-->
+
+			<div class="single-item">
+				<div class="item-image">
+					<a ui-sref={{item.href}}><img class = "card" src = {{item.img}}></a>
+				</div>
+				<h2 class="single-item-title">
+					{{item.name}}
+					<!--<br>-->
+					<!--<small class="text">Date Here</small>-->
+				</h2>
+				<ul class="tech">
+						<li ng-repeat = "list in item.tech">{{list}}</li>
+				</ul>
+				<p class="light">
+					{{item.description}}
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+

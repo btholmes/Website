@@ -1,0 +1,147 @@
+<html>
+<meta charset="UTF-8">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ben Holmes</title>
+
+<link rel="shortcut icon" type="image/ico" href="images/favicon.ico" />
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+	integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+	crossorigin="anonymous">
+<link rel="stylesheet" href="main.webapp.app.assets.css/style.css">
+</head>
+
+<body ng-app="myApp"  ng-controller="mainCtrl" >
+
+	
+	<nav class="navbar navbar-default bottomNavBorder mainNavbar" role="navigation"> 
+		<div class="container ">
+			<div class="navbar-header"> 
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> 
+					<span class="sr-only"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>					
+				</button> 	
+				<a ui-sref="home" class="text-blue navbar-brand myName">Ben Holmes</a>
+			</div>
+			 	<div class="navbar-collapse collapse"> 
+			 		<ul class="nav navbar-nav navbar-right navNames"> 
+<!-- 			 			<li><a ng-click = "show = home" class="navHeader" ui-sref="home">Home Page</a></li> -->
+			 			<li><a data-toggle="collapse" data-target=".navbar-collapse" ui-sref="about" ng-click = "show = false">About</a></li>
+						<li><a data-toggle="collapse" data-target=".navbar-collapse" ui-sref="notes" ng-click = "show = false">Notes</a></li>
+						<li data-toggle="collapse" data-target=".navbar-collapse" ng-click = "changeShow()"><a ui-sref="portfolio">Projects</a></li>
+			 			<li><a data-toggle="collapse" data-target=".navbar-collapse" ui-sref="blog" ng-click = "show = false">Resume</a></li>
+			 		</ul>
+			 	</div>
+		</div>
+	</nav>
+
+<!-- 	<nav class="navbar mainNavbar bottomNavBorder" role="navigation"> -->
+<!-- 		<div class = "nav navbar-nav navbar-form"> -->
+<!-- 			<div class="navbar-header"> -->
+<!-- 				<a ng-click = "show = home" class="navbar-brand navHeader" ui-sref="home"> Home Page </a> -->
+<!-- 			</div> -->
+	
+<!-- 			<ul class="nav navbar-nav navNames"> -->
+<!-- 				<li><a ng-click = "show = null" ui-sref="about">About</a></li> -->
+<!-- 				<li ng-click = "changeShow()"><a ui-sref="portfolio">Portfolio</a></li> -->
+<!-- 				<li><a ng-click = "show = 0" ui-sref="blog">Blog</a></li> -->
+<!-- <!-- 				<li><a ui-sref="schedule">Schedule</a></li> --> 
+<!-- <!-- 				<li><a ui-sref="map">Google Map API</a></li> --> 
+<!-- <!-- 				<li><a ui-sref="map">Testing</a></li> --> 
+<!-- 			</ul> -->
+<!-- 		</div> -->
+<!-- <!-- 		Right Navbar --> 
+<!-- 		<div class="nav navbar-nav navbar-right"> -->
+<!-- <!-- 			<form class="form-inline"> --> 
+<!-- <!-- 				<div class="form-group"> --> 
+<!-- <!-- 					<label class = 'text-white' for="name">Search</label>  --> 
+<!-- <!-- 					<input ng-model = "vm.searchText" type="text" class="form-control" id="name" placeholder="John Doe"> --> 
+<!-- 					<li role="presentation" class="myName nav-right-button mr10 mt4"><big><strong>Ben Holmes</strong></big></li>					 -->
+<!-- <!-- 				</div> --> 
+<!-- <!-- 				<button type="submit" class="btn btn-primary">Search</button> -->
+<!-- <!-- 			</form> --> 
+<!-- 		</div> -->
+
+<!-- 	</nav> -->
+
+	<div class="container-fluid mt5">
+		<div ui-view></div>
+	</div>
+
+
+
+
+
+	<script
+		src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script
+		src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+		integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+		crossorigin="anonymous"></script>
+	<script
+		src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+	
+	<script
+		src="https://code.angularjs.org/1.4.7/angular-animate.js"></script>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+	<script
+		src="http://angular-ui.github.io/ui-router/release/angular-ui-router.min.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAd1xMYT1bt99qtFWQEzXiRBvORDWHgPtk&libraries=places"></script>
+
+		
+<!-- 		<script  -->
+<!-- 		src = "https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyDCa1LUe1vOczX1hO_iGYgyo8p_jYuGOPU"></script> -->
+	
+	
+	
+	<script src="app.js"></script>
+	<script src="mainCtrl.js"></script>
+	<script src="main.webapp.app.common.constants/constants.js"></script>
+	<script src="main.webapp.app.login/controllers/loginCtrl.js"></script>	
+	<script src="main.webapp.app.filters/filters.js"></script>	
+	<script src="main.webapp.app.home/controllers/myCtrl.js"></script>
+	<script src="main.webapp.app.about/controllers/aboutCtrl.js"></script>
+	<script src="main.webapp.app.contact/controllers/contactsCtrl.js"></script>
+	<script src="main.webapp.app.portfolio/controllers/portfolioCtrl.js"></script>		
+	<script src="main.webapp.app.calendar/directives/scheduleDirective.js"></script>
+	<script src="main.webapp.app.calendar/controllers/scheduleCtrl.js"></script>
+	<script src="main.webapp.app.calendar/controllers/myTodoList.js"></script>
+	<script src="main.webapp.app.blog/controllers/blogCtrl.js"></script>
+	<script src="main.webapp.app.blog/services/blogService.js"></script>
+
+	<script src="main.webapp.app.notes/controllers/notesCtrl.js"></script>
+	
+	<script src="main.webapp.app.googleMap/controllers/mapCtrl.js"></script>
+	<script src="main.webapp.app.googleMap/factories/mapService.js"></script>
+	<script src="main.webapp.app.googleMap/directives/mapDirectiveMark.js"></script>
+	<script src="main.webapp.app.googleMap/directives/MapDirectiveUnMark.js"></script>
+	
+<!-- 	<script src="src/main.webapp.app.optum/FrontEnd/chargeback/chartDirective/chartDirective.js"></script> -->
+<!-- 	<script src="src/main/webapp/app/optum/FrontEnd/chargeback/controllers/chargebackAnalyticsCtrl.js"></script> -->
+<!-- 	<script src="src/main/webapp/app/optum/FrontEnd/chargeback/controllers/chargebackCtrl.js"></script> -->
+<!-- 	<script src="src/main/webapp/app/optum/FrontEnd/chargeback/factories/ChargebackAnalyticsFactory.js"></script> -->
+	
+
+</body>
+<!--<footer>-->
+	<!--<h1 class = "textTitle text-center text-gray pr4 mt2 navHeader">Keep in Touch!</h1>-->
+		<!--<div class = "row mt2"> -->
+		<!--<div class = "col-lg-2 col-lg-offset-4 col-md-2 col-md-offset-4 col-sm-2 col-sm-offset-4 col-xs-2 col-xs-offset-4">-->
+				<!--<a href = "https://www.linkedin.com/in/ben-holmes-a5154496?trk=nav_responsive_tab_profile">-->
+				<!--<img class = "aboutImage" src = "images/linkedIn.png">-->
+				<!--</a>-->
+		<!--</div>-->
+		<!--<div class = "col-lg-2 col-md-2 col-sm-2 col-xs-2">-->
+				<!--<a href = "https://github.com/btholmes">-->
+				<!--<img class = "aboutImage" src = "images/gitHub.png">-->
+				<!--</a>-->
+		<!--</div>-->
+	<!--</div>-->
+<!--</footer>-->
+
+</html>

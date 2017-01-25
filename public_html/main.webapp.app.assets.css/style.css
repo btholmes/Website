@@ -953,6 +953,14 @@ footer {
 
 
 /*THIS IS ALL FOR HOME PAGE*/
+
+.homeTextTitle{
+	font-size: 40px;
+}
+.homeTextSub{
+	font-size:15px;
+}
+
 @media only screen and (max-width: 569px){
 	.text{
 		font-size: 16px;

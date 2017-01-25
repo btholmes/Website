@@ -16,17 +16,17 @@
 				if (scrollTop >= 100) {
 					$('.mainNavbar').addClass('scrolled');
 
-					$timeout(function(){
-						$('.mainNavbar').css('display', 'none');
-					}, 500);
+					// $timeout(function(){
+						$('.mainNavbar').css('display', 'hidden');
+					// }, 500);
 
 				} else if (scrollTop < 100) {
 					$('.mainNavbar').css('display', 'block');
 					// $('.mainNavbar').removeClass('scrolled');
 
-					$timeout(function(){
+					// $timeout(function(){
 						$('.mainNavbar').removeClass('scrolled');
-					}, 1000);
+					// }, 1000);
 				}
 
 			});

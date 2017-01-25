@@ -1,30 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="402478e0-6426-4cb8-aa36-933ca0dca53b" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.webapp.app.blog/controller/blogCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.webapp.app.blog/controllers/blogCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.webapp.app.blog/controllers/blogCtrl.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.webapp.app.blog/php/addSQLData.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.webapp.app.blog/php/getSQLData.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.webapp.app.blog/php/getSQLData.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.webapp.app.blog/services/blogService.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.webapp.app.blog/views/blog.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.webapp.app.blog/views/readBlog.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.webapp.app.blog/views/readBlog.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.webapp.app.blog/views/writeBlog.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.webapp.app.contact/controllers/contactsCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.webapp.app.contact/views/contacts.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.webapp.app.login/controllers/loginCtrl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.webapp.app.login/views/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.webapp.app.login/views/passRecovery.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/main.webapp.app.portfolio/app.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/portfolio.html" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../.idea/workspace.xml" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.webapp.app.assets.css/style.css" afterPath="$PROJECT_DIR$/main.webapp.app.assets.css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.webapp.app.home/views/home.html" afterPath="$PROJECT_DIR$/main.webapp.app.home/views/home.html" />
-    </list>
+    <list default="true" id="402478e0-6426-4cb8-aa36-933ca0dca53b" name="Default" comment="" />
     <ignored path="ProfilePHP.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/bin/" />
@@ -48,8 +25,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+            <state relative-caret-position="225">
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -994,12 +971,12 @@
       <workItem from="1485196056775" duration="11303000" />
       <workItem from="1485287424411" duration="5519000" />
       <workItem from="1485309867374" duration="214000" />
-      <workItem from="1485314377436" duration="419000" />
+      <workItem from="1485314377436" duration="442000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49516000" />
+    <option name="totallyTimeSpent" value="49539000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1381,8 +1358,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="16" selection-end-column="4" />
+        <state relative-caret-position="225">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>

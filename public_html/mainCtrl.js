@@ -13,20 +13,10 @@
 			var scrollTop = 0;
 			$(window).scroll(function(){
 				scrollTop = $(window).scrollTop();
-				if (scrollTop >= 100) {
+				if (scrollTop >= 150) {
 					$('.mainNavbar').addClass('scrolled');
-
-					// $timeout(function(){
-						$('.mainNavbar').css('display', 'hidden');
-					// }, 500);
-
-				} else if (scrollTop < 100) {
-					$('.mainNavbar').css('display', 'block');
-					// $('.mainNavbar').removeClass('scrolled');
-
-					// $timeout(function(){
+				} else if (scrollTop < 150) {
 						$('.mainNavbar').removeClass('scrolled');
-					// }, 1000);
 				}
 
 			});

@@ -105,6 +105,8 @@
 
 .scrolled{
 	opacity: 0 !important;
+	pointer-events: none !important;
+	cursor: default !important;
 }
 .navbar-default .navbar-brand {
 	color: #FFF;
@@ -1062,4 +1064,12 @@ ul.tech li {
 
 .list{
 	list-style: none;
+}
+
+/*About PAGE*/
+
+.linkImage{
+	width: 100px;
+	height: 100px;
+	margin: 20px;
 }

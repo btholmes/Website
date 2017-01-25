@@ -1,9 +1,9 @@
-<h1 class = "title text-black text-center">Projects</h1>
+<h1 class = "title text-black text-center mt5">Projects</h1>
 <br>
 <br>
 
 <div>
-	<div ng-if = "show" class = "fade1 text-blue col-md-4" ng-repeat = "item in vm.items track by $index">
+	<div ng-if = "vm.show" class = "fade1 text-blue col-md-4" ng-repeat = "item in vm.items track by $index">
 		<div class = "mt15">
 			<!--<h4 class = "ml5 textTitlePortfolio">{{item.name}}</h4>-->
 			<!--<a ui-sref={{item.href}}><img class = "circlePic" src = {{item.img}}></a>-->

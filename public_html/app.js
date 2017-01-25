@@ -11,19 +11,12 @@ angular.module("myApp", ['ui.router', 'ngAnimate'])
 			controller: 'notesCtrl',
 			controllerAs: 'vm'
 		})
-		.state('passRecovery', {
-			name: 'passRecovery',
-			url: '/passRecovery', 
-			templateUrl: 'main.webapp.app.login/views/passRecovery.html',
-			controller: 'loginCtrl', 
-			controllerAs: 'vm'
-		})
 		.state('home', {			
 			name: 'home', 
 			url: '/home',
 			templateUrl: 'main.webapp.app.home/views/home.html',
 //			template: '<h1>Home</h1>',
-			controller: 'myCtrl', 
+			controller: 'homeCtrl',
 			controllerAs: 'vm'
 			
 		})
@@ -31,14 +24,6 @@ angular.module("myApp", ['ui.router', 'ngAnimate'])
 			url: '/game',
 			templateUrl: 'main.webapp.app.home/views/home-game.html'	
 		})
-//		.state('home.scores', {
-//			url: '/scores',
-//			views: {
-//				'scores@home' : {
-//					templateUrl: 'main.webapp.app.home/views/home-scores.html'
-//				}
-//			}
-//		})
 		.state('about', {
 			name: 'about', 
 			url: '/about', 
@@ -54,38 +39,13 @@ angular.module("myApp", ['ui.router', 'ngAnimate'])
 			controller: 'portfolioCtrl',
 			controllerAs: 'vm'
 		})
-		.state('blog', {
-			name: 'blog', 
-			url: '/blog', 
-			templateUrl: 'main.webapp.app.blog/views/blog.html', 
-			controller: 'blogCtrl',
+		.state('resume', {
+			name: 'resume',
+			url: '/resume',
+			templateUrl: 'main.webapp.app.resume/views/resume.html',
+			controller: 'resumeCtrl',
 			controllerAs: 'vm'
 		})
-		.state('blog.read', {
-			url: '/readBlog',
-			views: {
-				'read@blog' : {
-					templateUrl: 'main.webapp.app.blog/views/readBlog.html'
-//					template: '<h1>Read</h1>'
-				}
-			}
-		})
-		.state('blog.write', {
-			url: '/writeBlog',
-			views: {
-				'write@blog' : {
-					templateUrl: 'main.webapp.app.blog/views/writeBlog.html'
-//					template: '<h1>Write</h1>'
-				}
-			}
-		})
-		.state('contacts', {
-			name: 'contacts', 
-			url: '/contacts', 
-			templateUrl: 'main.webapp.app.contact/views/contacts.html', 
-			controller: 'contactsCtrl',
-			controllerAs: 'vm'
-		}) 
 		.state('schedule', {
 			name: 'schedule', 
 			url: '/schedule', 

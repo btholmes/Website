@@ -4,27 +4,33 @@
 	angular.module("myApp" )
 	.controller("mainCtrl",mainCtrl);  
 			
-	mainCtrl.$inject = ['$scope', '$timeout'];
+	mainCtrl.$inject = ['$timeout'];
 	
-	function mainCtrl($scope, $timeout){
+	function mainCtrl($timeout){
 		var vm = this;
-		$scope.show = false;
-		$scope.changeUrl = function() {
-			
-		}
-		$scope.changeShow = function() {
-			 $timeout(function(){
-				 $scope.show = true
-				 }, 100);
-		};
-		$scope.$watch("window.location.href", function() {
-			var url = window.location.href;
-			if(url.indexOf("portfolio") != -1){
-				$scope.changeShow();
-			}
-			else{
-				$scope.show = false;
-			}
+
+		angular.element(document).ready(function() {
+			var scrollTop = 0;
+			$(window).scroll(function(){
+				scrollTop = $(window).scrollTop();
+				if (scrollTop >= 100) {
+					$('.mainNavbar').addClass('scrolled');
+
+					$timeout(function(){
+						$('.mainNavbar').css('display', 'none');
+					}, 500);
+
+				} else if (scrollTop < 100) {
+					$('.mainNavbar').css('display', 'block');
+					// $('.mainNavbar').removeClass('scrolled');
+
+					$timeout(function(){
+						$('.mainNavbar').removeClass('scrolled');
+					}, 1000);
+				}
+
+			});
 		});
+
 	}
 })(); 

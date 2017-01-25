@@ -5,14 +5,30 @@
 @import url("https://fonts.googleapis.com/css?family=Fredericka+the+Great"); /**'Fredericka the Great', cursive;  **/
 
 
+/*OPENING PAGE*/
+.mainList li {
+	float: left;
+	padding: 10px;
+	list-style-type: none;
+}
+
+.mainList a:hover{
+	cursor: pointer;
+}
+.mainRow {
+	position: absolute;
+	/*top: 0%;*/
+	width: 500px;
+}
+
 .icon-bar{
 	color: #fff;
 }
 #floating{
-	margin-top: -5%; 
+	/*margin-top: -5%; */
 	z-index: 1; 
 	width: 100%; 
-	height: 90%; 
+	height: 100%;
 }
 .homeStuff{
 	position: absolute; 
@@ -73,6 +89,22 @@
 	 /*background: #FFF;*/
 	background: #2dc4b9;
 	z-index: 3;
+	display: none;
+	opacity: 0;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	transition: all .5s;
+	-moz-transition: all .5s;
+	-webkit-transition: all .5s;
+	-o-transition: all .5s;
+	-ms-transition: all .5s;
+	/* line-height: 100%; */
+}
+
+.scrolled{
+	opacity: 0 !important;
 }
 .navbar-default .navbar-brand {
 	color: #FFF;
@@ -829,9 +861,9 @@ h3 img {
  animation: scaleUp 0.5s both ease-in; 
 }
 .fade1.ng-enter-stagger {
-	-webkit-transition-delay: 0.3s;
-    transition-delay: 0.3s;
-     animation-delay: 0.4s;
+	-webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+     animation-delay: 0.2s;
 }
 .fade1.ng-enter-active { 
 	 opacity: 1; 

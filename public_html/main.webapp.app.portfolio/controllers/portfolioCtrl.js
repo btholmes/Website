@@ -4,11 +4,31 @@
 	angular.module("myApp" )
 	.controller("portfolioCtrl", portfolioCtrl);  
 			
-	portfolioCtrl.$inject = ['$state' , '$scope']; 
+	portfolioCtrl.$inject = ['$state', '$scope', '$timeout'];
 	
-	function portfolioCtrl($state, $scope){
+	function portfolioCtrl($state, $scope, $timeout){
 		var vm = this; 
-		vm.name = "Portfolio Page"; 
+		vm.name = "Portfolio Page";
+		vm.show = false;
+		vm.init = init;
+
+		vm.init();
+
+		function init(){
+
+			$timeout(function(){
+				vm.show = true;
+			}, 100);
+
+			$('.mainNavbar').css("display", "block");
+			$timeout(function(){
+				$('.mainNavbar').css("opacity", "1");
+			}, 100);
+
+
+		}
+
+
 		vm.items = [
 						{name: "Calendar w/ Schedule", site: "true", href: "schedule", img: "images/calendarImage.png",
 						description: "This was a simple calendar I made when I wanted to get the hang of " +

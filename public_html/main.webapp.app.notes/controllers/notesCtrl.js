@@ -4,11 +4,23 @@
     angular.module("myApp" )
         .controller("notesCtrl", notesCtrl);
 
-    notesCtrl.$inject = ['$state' , '$scope'];
+    notesCtrl.$inject = ['$state' , '$scope', '$timeout'];
 
-    function notesCtrl($state, $scope){
+    function notesCtrl($state, $scope, $timeout){
         var vm = this;
+        vm.init = init;
         vm.name = "Notes Page";
+
+        vm.init();
+
+        function init(){
+
+            $('.mainNavbar').css("display", "block");
+            $timeout(function(){
+                $('.mainNavbar').css("opacity", "1");
+            }, 100);
+
+        }
 
         vm.notes = [
             {title: "Set Up Clarifai w/ IntelliJ",

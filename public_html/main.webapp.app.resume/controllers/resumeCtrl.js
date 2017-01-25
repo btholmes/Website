@@ -2,15 +2,15 @@
 	'use strict';
 
 	angular.module("myApp")
-	.controller("aboutCtrl", aboutCtrl);
+	.controller("resumeCtrl", resumeCtrl);
 	
-	aboutCtrl.$inject = ['$timeout'];
-	function aboutCtrl($timeout) {
+	resumeCtrl.$inject = ['$timeout'];
+	
+	function resumeCtrl($timeout) {
 		var vm = this;
 		vm.init = init;
 
 		vm.init();
-
 
 		function init(){
 
@@ -20,5 +20,7 @@
 			}, 100);
 
 		}
+
+		
 	}
 })();

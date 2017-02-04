@@ -18,3 +18,10 @@
  * Run Command 
  	heroku login 
 
+# Pretty print in terminal 
+* curl localhost:5000 | python -m json.tool
+* python -m SimpleHttpServer  (Brings localhost:8000 in browser )
+
+## Install Beautiful Soup 
+ * Activate venv
+ * pip install BeautifulSoup4

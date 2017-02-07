@@ -11,8 +11,8 @@ import urllib
 app = Flask(__name__)
 
 #  Client Keys
-CLIENT_ID = ""
-CLIENT_SECRET = ""
+CLIENT_ID = "96b5706aae2a49989ed8c0c8ae57004e"
+CLIENT_SECRET = "fb4c0a64cb074b25bcb28a4787c4007b"
 
 # Spotify URLS
 SPOTIFY_AUTH_URL = "https://accounts.spotify.com/authorize"
@@ -24,7 +24,7 @@ SPOTIFY_API_URL = "{}/{}".format(SPOTIFY_API_BASE_URL, API_VERSION)
 
 # Server-side Parameters
 CLIENT_SIDE_URL = "http://127.0.0.1"
-PORT = 8080
+PORT = 5000
 REDIRECT_URI = "{}:{}/callback/q".format(CLIENT_SIDE_URL, PORT)
 SCOPE = "playlist-modify-public playlist-modify-private"
 STATE = ""

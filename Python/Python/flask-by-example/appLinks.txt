@@ -1,7 +1,0 @@
-PROD
-https://wordcount-pro-ben.herokuapp.com/ 
-https://git.heroku.com/wordcount-pro-ben.git
-
-STAGE
-https://wordcount-pro-ben-stage.herokuapp.com/ 
-https://git.heroku.com/wordcount-pro-ben-stage.git

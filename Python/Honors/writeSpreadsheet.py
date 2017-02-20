@@ -27,7 +27,7 @@ def writeTest():
     print "writing test"
     ifile = open('test.csv', "rb")
     reader = csv.reader(ifile)
-    ofile = open('ttest.csv', "wb")
+    ofile = open('test.csv', "wb")
     writer = csv.writer(ofile, delimiter=',', quotechar='"', quoting=csv.QUOTE_ALL)
 
     for row in reader:

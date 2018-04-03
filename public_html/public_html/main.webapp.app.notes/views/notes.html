@@ -1,0 +1,22 @@
+<h1 class = "title text-black text-center mt5">My Notes</h1>
+<hr>
+
+<div class = "container">
+    <div ng-repeat = "item in vm.notes track by $index">
+        <div class = "text-center mt0">
+            <div>
+                <h2 class="single-item-title">
+                    {{item.title}}
+                </h2>
+                <ul class = "list text-primary">
+                    <li ng-repeat = "note in item.content track by $index">{{note}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+
+</div>
+
